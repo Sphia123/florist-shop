@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloomFlow – Войти</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Bf+3JM6zmGdZoBxt7z6p1ycJjYEtbtDKEdrSTqH1Y8VC4+p4XDphvUlzX0C3AlIWlmVl8RkIw2DY8a+VuFaz2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="../navigation.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="../index.html" class="logo">BloomFlow</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Домой</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="delivery.html">Цена</a></li>
+        <li><a href="login.html" class="active">Войти</a></li>
+        <li><a href="register.html" class="btn-signup">Зарегистрироваться</a></li>
+        <li><a href="card.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div class="hero" style="padding-bottom: 1rem;">
+      <h1>С возвращением</h1>
+      <p>Пожалуйста, войдите, чтобы продолжить.</p>
+    </div>
+  </header>
+  <main class="container">
+    <div class="form-wrapper">
+      <form onsubmit="event.preventDefault(); alert('Функция авторизации пока находится в разработке');">
+        <label for="email">Email </label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2026 BloomFlow. Все права защищены.</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
