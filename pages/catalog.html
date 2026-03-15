@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloomFlow – Каталог</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Bf+3JM6zmGdZoBxt7z6p1ycJjYEtbtDKEdrSTqH1Y8VC4+p4XDphvUlzX0C3AlIWlmVl8RkIw2DY8a+VuFaz2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="../navigation.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="../index.html" class="logo">BloomFlow</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Домой</a></li>
+        <li><a href="catalog.html" class="active">Каталог</a></li>
+        <li><a href="delivery.html">Цена</a></li>
+        <li><a href="login.html">Войти</a></li>
+        <li><a href="register.html" class="btn-signup">Зарегистрироваться</a></li>
+        <li><a href="card.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div class="hero" style="padding-bottom: 1rem;">
+      <h1>Наши Букеты</h1>
+      <p>Откройте для себя композиции на любой случай.</p>
+    </div>
+  </header>
+  <main class="container">
+    <div class="grid">
+      
+      <div class="card">
+        <img src="./img/rose.png" alt="Роза Радости">
+        <h3>Роза Радости</h3>
+        <p>Романтическая коллекция свежих красных и розовых роз.</p>
+        <div class="price">2500 ₽</div>
+        <button onclick="addToCart({name:'Роза Радости', price:'2500', image:'../img/rose.png'})">В корзину</button>
+      </div>
+      
+      <div class="card">
+        <img src="./img/mix.png" alt="весенний микс">
+        <h3>Весенний Микс</h3>
+        <p>Веселый микс тюльпанов, ромашек и зелени.</p>
+        <div class="price">2499 ₽</div>
+        <button onclick="addToCart({name:'Весенний Микс', price:'2499', image:'../img/mix.png'})">В корзину</button>
+      </div>
+      
+      <div class="card">
+        <img src="./img/sunflower.png" alt="Подсолнух Радости">
+        <h3>Подсолнух Радости</h3>
+        <p>Солнечная композиция ярких подсолнухов.</p>
+        <div class="price">2999 ₽</div>
+        <button onclick="addToCart({name:'Подсолнух Радости', price:'2999', image:'../img/sunflower.png'})">В корзину</button>
+      </div>
+      
+      <div class="card">
+        <img src="./img/peone.png" alt="пастельная мечта">
+        <h3>Пастельная Мечта</h3>
+        <p>Нежный букет пастельных оттенков</p>
+        <div class="price">3499 ₽</div>
+        <button onclick="addToCart({name:'Пастельная Мечта', price:'3499', image:'../img/peone.png'})">В корзину</button>
+      </div>
+      
+      <div class="card">
+        <img src="./img/lilac.png" alt="Лиловая Гармония">
+        <h3>Лиловая Гармония</h3>
+        <p>Гармоничное сочетание лиловых и фиалковых цветов.</p>
+        <div class="price">2750 ₽</div>
+        <button onclick="addToCart({name:'Лиловая Гармония', price:'2750', image:'../img/lilac.png'})">В корзину</button>
+      </div>
+      
+      <div class="card">
+        <img src="./img/exotic.png" alt="Экзотический Шарм">
+        <h3>Экзотический Шарм</h3>
+        <p>Экзотический выбор орхидей и тропических цветов.</p>
+        <div class="price">3999 ₽</div>
+        <button onclick="addToCart({name:'Экзотический Шарм', price:'3999', image:'../img/exotic.png'})">В корзину</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2026 BloomFlow. Все права защищены.</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
