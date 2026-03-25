@@ -11,6 +11,7 @@
 
 ## Запуск
 
+```bash
 cd flotist
 npm install
 npm run dev
